@@ -13,6 +13,7 @@
 		47C062CC21CD40AD007E6EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C062CB21CD40AD007E6EE1 /* Assets.xcassets */; };
 		47C062CF21CD40AD007E6EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C062CD21CD40AD007E6EE1 /* LaunchScreen.storyboard */; };
 		47C062DA21CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C062D921CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.swift */; };
+		47C062E921CD43FC007E6EE1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C062E821CD43FC007E6EE1 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		47C062D521CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshotXamarinTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C062D921CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshotXamarinTestUITests.swift; sourceTree = "<group>"; };
 		47C062DB21CD40AD007E6EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C062E821CD43FC007E6EE1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		47C062D821CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				47C062E821CD43FC007E6EE1 /* SnapshotHelper.swift */,
 				47C062D921CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.swift */,
 				47C062DB21CD40AD007E6EE1 /* Info.plist */,
 			);
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47C062DA21CD40AD007E6EE1 /* FastlaneSnapshotXamarinTestUITests.swift in Sources */,
+				47C062E921CD43FC007E6EE1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

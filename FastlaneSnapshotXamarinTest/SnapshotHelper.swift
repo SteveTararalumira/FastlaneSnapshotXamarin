@@ -182,7 +182,7 @@ open class Snapshot: NSObject {
             return
         #endif
 
-        let networkLoadingIndicator = XCUIApplication().otherElements.deviceStatusBars.networkLoadingIndicators.element
+        let networkLoadingIndicator = XCUIApplication(bundleIdentifier: "com.bohdanhrybach.FastlaneSnapshotXamarin").otherElements.deviceStatusBars.networkLoadingIndicators.element
         let networkLoadingIndicatorDisappeared = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: networkLoadingIndicator)
         _ = XCTWaiter.wait(for: [networkLoadingIndicatorDisappeared], timeout: timeout)
     }
@@ -257,7 +257,7 @@ private extension XCUIElementQuery {
     }
 
     var deviceStatusBars: XCUIElementQuery {
-        let deviceWidth = XCUIApplication().windows.firstMatch.frame.width
+        let deviceWidth = XCUIApplication(bundleIdentifier: "com.bohdanhrybach.FastlaneSnapshotXamarin").windows.firstMatch.frame.width
 
         let isStatusBar = NSPredicate { (evaluatedObject, _) in
             guard let element = evaluatedObject as? XCUIElementAttributes else { return false }

@@ -1,7 +1,9 @@
 #!/bin/bash
 
 currentFolder=${PWD}
-pathToApp=$currentFolder/FastlaneSnapshotXamarin/FastlaneSnapshotXamarin/bin/iPhoneSimulator/Debug/device-builds/*/FastlaneSnapshotXamarin.app
+projectFolder=FastlaneSnapshotXamarin
+appName=FastlaneSnapshotXamarin.app
+pathToApp=$currentFolder/$projectFolder/bin/iPhoneSimulator/Debug/device-builds/*/$appName
 
 deviceIds=(
     "0E96EC68-2BAF-4617-BFC3-80143BAB173A" # iPhone 8
